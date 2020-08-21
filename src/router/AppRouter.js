@@ -7,7 +7,9 @@ import Shop from '../pages/Shop/index'
 import NotFound from '../pages/NotFound/index'
 import City from '../pages/City/index'
 import Search from '../pages/Search/index'
+import Detail from '../pages/Detail/index'
 import Layout from '../Layout'
+import HooksTest from '../pages/HooksTest/index'
 export default class AppRouter extends Component {
     render() {
         return (
@@ -19,6 +21,8 @@ export default class AppRouter extends Component {
                    <Route  path="/mine" component={ Mine}></Route>
                    <Route  path="/shop" component={ Shop}></Route>
                    <Route  path="/city" component={ City}></Route>
+                   <Route  path="/detail" component={ Detail}></Route>
+                   <Route  path="/hooks" component={HooksTest}></Route>
                    <Route  path="/search/:content" component={ Search}></Route>
                    <Route  path="*" component={ NotFound}></Route>
                 </Switch>
